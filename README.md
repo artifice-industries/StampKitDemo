@@ -1,5 +1,7 @@
 # StampKit Demo
 
+Two demo applications for [StampKit](https://github.com/artifice-industries/StampKit)
+
 ## Server
 - Add and remove timelines to the server.
 - Set a password for each timeline.
