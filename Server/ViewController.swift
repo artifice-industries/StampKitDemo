@@ -103,6 +103,10 @@ extension ViewController: NSTextFieldDelegate {
 }
 
 extension ViewController: SKServerDelegate {
+    func statusCode(for client: SKClientFacade, sendingMessage message: OSCMessage, toServer server: SKServer, forTimelines timelines: [SKTimelineDescription]) -> SKResponseStatusCode {
+        return SKResponseStatusCode.created
+    }
+    
     func server(_: SKServer, didReceiveMessage message: OSCMessage, withTimeline timeline: SKTimelineDescription) {
         print("Incoming message for timeline: \(timeline.name)")
         print("Message: \(OSCAnnotation.annotation(for: message, with: .spaces, andType: true))")

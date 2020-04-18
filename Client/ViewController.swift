@@ -63,16 +63,16 @@ class ViewController: NSViewController {
         timeline = nil
     }
     
-    @IBAction func message(_ sender: Any) {
+    @IBAction func note(_ sender: Any) {
         guard let connectedTimeline = timeline, !textField.stringValue.isEmpty else { return }
-        if OSCAnnotation.isValid(annotation: textField.stringValue, with: .spaces) {
-            if let message = OSCAnnotation.oscMessage(for: textField.stringValue, with: .spaces) {
-                connectedTimeline.send(message: message)
-            }
-        }
+        connectedTimeline.send(note: textField.stringValue, withColour: .green, completionHandler: { description in
+            print("Received Reply from Server")
+            print("Note: \(description.note)")
+            print("Colour: \(description.colour)")
+            print("Code: \(description.code)")
+        })
         textField.stringValue = ""
     }
-
     
 }
 

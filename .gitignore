@@ -1,0 +1,12 @@
+
+.DS_Store
+
+*.xcworkspacedata
+
+StampKitDemo.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+
+StampKitDemo.xcodeproj/project.xcworkspace/xcuserdata/artificers.xcuserdatad/UserInterfaceState.xcuserstate
+
+StampKitDemo.xcodeproj/xcuserdata/artificers.xcuserdatad/xcschemes/xcschememanagement.plist
+
+StampKitDemo.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
