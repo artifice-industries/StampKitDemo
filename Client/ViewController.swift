@@ -66,7 +66,7 @@ class ViewController: NSViewController {
     @IBAction func note(_ sender: Any) {
         guard let connectedTimeline = timeline, !textField.stringValue.isEmpty else { return }
         connectedTimeline.request(note: textField.stringValue, withColour: .green, completionHandler: { description in
-            print("Received Reply from Server")
+            print("Received:")
             print("Note: \(description.note)")
             print("Colour: \(description.colour)")
             print("Code: \(description.code)")
