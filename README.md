@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="stampkit-icon.svg" width="256" align="middle" alt=“StampKit”/>
+    <img src="https://github.com/artifice-industries/StampKit/blob/master/stampkit-icon.svg" width="256" align="middle" alt=“StampKit”/>
 </p>
 
 # StampKit Demo
